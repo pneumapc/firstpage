@@ -41,6 +41,10 @@ nav {
     padding: 0 1rem;
 }
 
+.nav-item.active {
+    color: yellow;
+}
+
 .nav-separator {
     color: rgba(255, 255, 255, 0.7);
 }
