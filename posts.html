@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>소식 - 웹사이트</title>
+    <title>소식 - 베트남 여행 이야기</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="logo">
+                <a href="index.html">AHNS</a>
+            </div>
             <nav>
                 <a href="index.html" class="nav-item">홈</a>
                 <span class="nav-separator">|</span>
@@ -19,12 +23,111 @@
         </header>
         
         <main>
-            <p>최신 소식을 전해드립니다.</p>
+            <h1>여행 이야기</h1>
+            <p class="subtitle">베트남 여행의 모든 것</p>
+            
+            <!-- 검색 섹션 추가 -->
+            <section class="search-section">
+                <form class="search-form">
+                    <div class="search-input-wrapper">
+                        <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+                        <button type="submit" class="search-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- 키워드 필터 추가 -->
+                <div class="keyword-filter">
+                    <a href="#" class="keyword-tag active">전체</a>
+                    <a href="#" class="keyword-tag">맛집</a>
+                    <a href="#" class="keyword-tag">여행 팁</a>
+                    <a href="#" class="keyword-tag">숙소</a>
+                    <a href="#" class="keyword-tag">교통</a>
+                    <a href="#" class="keyword-tag">쇼핑</a>
+                    <a href="#" class="keyword-tag">문화</a>
+                    <a href="#" class="keyword-tag">관광지</a>
+                </div>
+            </section>
+            
+            <section class="posts-list">
+                <article class="post-item">
+                    <div class="post-image">
+                        <img src="images/hanoi-street.jpg" alt="하노이 거리 풍경">
+                    </div>
+                    <div class="post-details">
+                        <h2>하노이 올드 쿼터 골목 탐방기</h2>
+                        <div class="post-meta">
+                            <span class="post-date">2024.03.15</span>
+                            <span class="post-separator">•</span>
+                            <span class="post-views">조회수 238</span>
+                            <span class="post-separator">•</span>
+                            <span class="post-category">여행 팁</span>
+                        </div>
+                        <p class="post-excerpt">
+                            36거리의 매력적인 골목들과 현지 카페 추천
+                        </p>
+                        <a href="posts/hanoi-old-quarter.html" class="read-more">자세히 보기 →</a>
+                    </div>
+                </article>
+
+                <article class="post-item">
+                    <div class="post-image">
+                        <img src="images/pho.jpg" alt="베트남 쌀국수">
+                    </div>
+                    <div class="post-details">
+                        <h2>현지인이 추천하는 하노이 쌀국수 맛집</h2>
+                        <div class="post-meta">
+                            <span class="post-date">2024.03.10</span>
+                            <span class="post-separator">•</span>
+                            <span class="post-views">조회수 456</span>
+                            <span class="post-separator">•</span>
+                            <span class="post-category">맛집</span>
+                        </div>
+                        <p class="post-excerpt">
+                            줄 서서 먹는 진짜 맛집 포(Pho) 베스트 5
+                        </p>
+                        <a href="posts/pho-restaurants.html" class="read-more">자세히 보기 →</a>
+                    </div>
+                </article>
+
+                <article class="post-item">
+                    <div class="post-image">
+                        <img src="images/halong-bay.jpg" alt="하롱베이 전경">
+                    </div>
+                    <div class="post-details">
+                        <h2>하롱베이 크루즈 선택 가이드</h2>
+                        <div class="post-meta">
+                            <span class="post-date">2024.03.05</span>
+                            <span class="post-separator">•</span>
+                            <span class="post-views">조회수 867</span>
+                            <span class="post-separator">•</span>
+                            <span class="post-category">여행 가이드</span>
+                        </div>
+                        <p class="post-excerpt">
+                            예산별 크루즈 추천과 현지 예약 팁
+                        </p>
+                        <a href="posts/halong-bay-cruise.html" class="read-more">자세히 보기 →</a>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-btn">10</a>
+            </div>
         </main>
 
         <footer>
             <p>&copy; 2025 Ahns.cloud All rights reserved.</p>
         </footer>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html> 

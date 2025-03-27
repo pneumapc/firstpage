@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹사이트</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="logo">
+                <a href="index.html">AHNS</a>
+            </div>
             <nav>
                 <a href="index.html" class="nav-item active">홈</a>
                 <span class="nav-separator">|</span>
@@ -19,8 +23,50 @@
         </header>
         
         <main>
-            <p>우리 웹사이트에 오신것을 환영합니다.</p>
-            <p>모든 클릭에 기쁨이 함께하기를 바랍니다.</p>
+            <h1>베트남 여행 이야기</h1>
+            <p class="subtitle">베트남의 숨은 명소와 현지 맛집을 소개합니다</p>
+            
+            <section class="recent-posts">
+                <h2>최근 게시물</h2>
+                <div class="post-grid">
+                    <article class="post-card">
+                        <a href="posts/hanoi-old-quarter.html">
+                            <img src="images/hanoi-street.jpg" alt="하노이 거리 풍경">
+                            <div class="post-content">
+                                <h3>하노이 올드 쿼터 골목 탐방기</h3>
+                                <p class="post-excerpt">36거리의 매력적인 골목들과 현지 카페 추천</p>
+                                <span class="post-date">2024.03.15</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post-card">
+                        <a href="posts/pho-restaurants.html">
+                            <img src="images/pho.jpg" alt="베트남 쌀국수">
+                            <div class="post-content">
+                                <h3>현지인이 추천하는 하노이 쌀국수 맛집</h3>
+                                <p class="post-excerpt">줄 서서 먹는 진짜 맛집 포(Pho) 베스트 5</p>
+                                <span class="post-date">2024.03.10</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post-card">
+                        <a href="posts/halong-bay-cruise.html">
+                            <img src="images/halong-bay.jpg" alt="하롱베이 전경">
+                            <div class="post-content">
+                                <h3>하롱베이 크루즈 선택 가이드</h3>
+                                <p class="post-excerpt">예산별 크루즈 추천과 현지 예약 팁</p>
+                                <span class="post-date">2024.03.05</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                
+                <div class="more-posts">
+                    <a href="posts.html" class="more-posts-btn">더 많은 글 보기</a>
+                </div>
+            </section>
         </main>
 
         <footer>
